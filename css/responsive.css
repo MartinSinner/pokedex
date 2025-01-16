@@ -1,0 +1,181 @@
+@media (max-width:1205px) {
+  .footerColumn {
+    min-width: 280px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width:978px) {
+  .footerColumn {
+    min-width: 180px;
+    max-width: 400px;
+  }
+
+  .socialIcons {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+}
+
+@media (max-width:600px) {
+
+  .headerContainer {
+    justify-content: space-between; /* Logo und About bleiben korrekt */
+}
+  #overlayContent {
+    width: 260px;
+  }
+
+  .tabContent {
+    margin: 0;
+  }
+
+  .tabs {
+    margin-bottom: 25px;
+  }
+
+  .infoContainer,
+  .statBarLabel {
+    font-size: 14px;
+    gap: 10px 18px;
+  }
+
+  .infoContainer {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .statBar {
+    grid-template-columns: 100px 1fr;
+    gap: 8px;
+  }
+
+  .statBarContainer {
+    height: 18px;
+  }
+
+  .evolutionContent {
+    margin: 0;
+    gap: 10px;
+
+  }
+
+  button[onclick="closeOverlay()"] {
+    margin-top: 25px;
+  }
+
+  .footerColumn {
+    min-width: 160px;
+  }
+
+  .arrow {
+    top: 30%;
+  }
+
+  .searchBar {
+    width: 50px;
+  }
+
+  .searchBar input {
+    width: 0;
+    opacity: 0;
+    /* invicible */
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .searchBar.expanded {
+    width: 250px;
+    position: absolute;
+    right: 0;
+  }
+
+  .searchBar.expanded input {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@media (max-width:548px) {
+  .headerContainer {
+    justify-content: center;
+  }
+
+  .footerColumn {
+    min-width: 130px;
+  }
+
+
+}
+
+@media (max-width:440px) {
+
+  #overlayContent {
+    width: 150px;
+  }
+
+  .tabs button {
+    padding: 8px 14px;
+  }
+
+  .infoContainer {
+    margin-left: -50px;
+  }
+
+  .infoLabel,
+  .infoValue {
+    white-space: nowrap;
+  }
+
+  .statBar {
+    grid-template-columns: 60px 1fr;
+    margin-right: -50px;
+  }
+
+  .statBarLabel {
+    margin-left: -50px;
+  }
+
+  .statBarContainer {
+    margin-left: 10px;
+  }
+
+  .evolutionContent {
+    gap: 0;
+  }
+
+  .evolutionStage img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .evolutionStage p {
+    font-size: 12px;
+  }
+
+  .footerContainer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .footerColumn h3 {
+    font-size: 30px;
+  }
+
+  .footerColumn ul,
+  .footerColumn p,
+  .socialIcons a {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width:420px) {
+  .searchWrapper {
+    flex-direction: column;
+  }
+}

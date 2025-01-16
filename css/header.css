@@ -1,0 +1,99 @@
+#header {
+    background: linear-gradient(to right, #1f1f1f, #444444);
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: calc(100% - 10px); 
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-left: 32px;
+    margin-right: 32px;
+    gap: 10px;
+}
+
+.logo img {
+    width: 190px;
+    height: 120px;
+}
+
+/*searchfunction*/
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.searchWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 12px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.searchBar:hover {
+    box-shadow: 0 0 8px #5aa339;
+}
+
+.searchBar input {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #444444;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.searchBar input:focus {
+    outline: none;
+}
+
+.searchBar button {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.searchBar button:hover {
+    background-color: #444444;
+}
+
+.scrollToFooter {
+    background-color: #333333;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.scrollToFooter:hover {
+    background-color: #444444;
+    box-shadow: 0 0 8px #5aa339;
+}

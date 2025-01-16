@@ -1,0 +1,256 @@
+/*overlay section*/
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#overlayContent {
+    background-color: #1f1f1f;
+    padding: 30px 70px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    width: 400px;
+    max-height: 80%;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+}
+
+#overlayContent h2 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+/*tab section*/
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.tabs button {
+    background-color: #333333;
+    border: none;
+    color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.tabs button:hover {
+    background-color: #444444;
+    cursor: pointer;
+}
+
+.tabs button.active {
+    background-color: #78C850;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tabContent {
+    display: none;
+    text-align: left;
+    margin: 20px;
+    min-height: 170px;
+}
+
+#info.active {
+    display: flex;
+}
+
+#stats.active {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabContent img {
+    width: 150px;
+}
+
+/*arrow buttons*/
+.arrow {
+    position: absolute;
+    top: 50%;
+    padding: 8px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+}
+
+.arrow:hover {
+    background-color: #444444;
+    cursor: pointer;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+/*base info*/
+.infoContainer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    text-align: left;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.infoValue {
+    font-family: Arial, sans-serif !important;
+    font-weight: 100px !important;
+    color: white;
+}
+
+/*bars */
+.statBar {
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.statBarLabel {
+    color: #fcfcfc;
+    font-weight: bold;
+    text-align: left;
+}
+
+.statBarContainer {
+    flex: 1;
+    background-color: #363636;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-left: 12px;
+    position: relative;
+}
+
+.statBarFill {
+    height: 100%;
+    background-color: #c0392b;
+}
+
+/*evolution container*/
+.evolutionArrow {
+    font-size: 24px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.evolutionContent {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.evolutionStage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.evolutionStage img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px;
+}
+
+.evolutionStage p {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+}
+
+#evolution.active {
+    display: flex;
+}
+
+/*loadindicator*/
+.loading {
+    font-size: 16px;
+    color: #aaa;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*close button*/
+button[onclick="closeOverlay()"] {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[onclick="closeOverlay()"]:hover {
+    background-color: #c0392b;
+    cursor: pointer;
+}
+
+
+/*overlay loading screen*/
+
+#loadingOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadingOverlay .spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ccc;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

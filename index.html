@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+
+    <link rel="icon" href="assets/icons/pokeball.png">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/pokemon.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/standard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <header id="header">
+        <div class="headerContainer">
+            <div class="logo">
+                <a href="#pokemonContainer" onclick="scrollToTop()">
+                    <img src="assets/icons/logo.svg" alt="Logo">
+                </a>
+            </div>
+            <div class="headerRight">
+                <div class="searchWrapper">
+                    <div class="searchBar">
+                        <input type="text" id="searchInput" placeholder="Search Pokemon..." oninput="handleSearch()">
+                        <button id="toggleSearch" onclick="toggleSearchBar()">🔍</button>
+
+                    </div>
+                    <button class="scrollToFooter" onclick="scrollToFooter()">About</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="scrollContainer">
+        <div id="pokemonContainer" class="pokemonContainer"></div>
+    </div>
+    <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+    <div id="loadMore">
+        <button id="loadMoreButton" onclick="loadMorePokemon()">Load More</button>
+        <div id="loading" style="display: none;">Loading...</div>
+    </div>
+    <div id="overlay" onclick="handleOverlayClick()" style="display: none;">
+        <div id="overlayContent" onclick="event.stopPropagation()">
+            <button id="prevPokemon" class="arrow left" onclick="navigatePokemon('prev')">←</button>
+            <h2 id="pokemonName"></h2>
+            <div id="pokemonImageContainer">
+                <img id="pokemonImage">
+            </div>
+
+            <div class="tabs" id="tabName">
+                <button onclick="showTab('info')">Information</button>
+                <button onclick="showTab('stats')">Stats</button>
+                <button onclick="showTab('evolution')">Evolution</button>
+            </div>
+            <div id="info" class="tabContent active"></div>
+            <div id="stats" class="tabContent"></div>
+            <div id="evolution" class="tabContent evolutionContent"></div>
+            <button id="nextPokemon" class="arrow right" onclick="navigatePokemon('next')">→</button>
+            <button onclick="closeOverlay()">Schließen</button>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <div class="footerContainer">
+            <div class="footerColumn">
+                <h3>About</h3>
+                <p>This is a fan-made Pokédex application, powered by the PokéAPI. All rights belong to their respective
+                    owners.</p>
+            </div>
+            <div class="footerColumn">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="https://pokeapi.co" target="_blank">PokéAPI</a></li>
+                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <h3>Socials</h3>
+                <div class="socialIcons">
+                    <a href="https://www.x.com" target="_blank">🐦 Twitter</a>
+                    <a href="https://www.facebook.com" target="_blank">📘 Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank">📷 Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>© 2024 Pokédex App. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="js/api.js"></script>
+    <script src="js/pokemon.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/template.js"></script>
+</body>
+
+</html>
