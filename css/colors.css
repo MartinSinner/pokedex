@@ -313,3 +313,98 @@
 .type-flying-bg {
     background: radial-gradient(circle at center, rgba(168, 144, 240, 0.2) 0%, rgba(0,0,0,0) 70%);
 }
+
+/* Type-specific active tab styles */
+
+.type-grass .tabs button.active {
+    background: linear-gradient(180deg, #78C850 0%, #4A9C2A 100%);
+    box-shadow: 0 0 15px rgba(120, 200, 80, 0.3);
+}
+
+.type-fire .tabs button.active {
+    background: linear-gradient(180deg, #F08030 0%, #C25016 100%);
+    box-shadow: 0 0 15px rgba(240, 128, 48, 0.3);
+}
+
+.type-water .tabs button.active {
+    background: linear-gradient(180deg, #6890F0 0%, #386CCC 100%);
+    box-shadow: 0 0 15px rgba(104, 144, 240, 0.3);
+}
+
+.type-bug .tabs button.active {
+    background: linear-gradient(180deg, #A8B820 0%, #8A9A00 100%);
+    box-shadow: 0 0 15px rgba(168, 184, 32, 0.3);
+}
+
+.type-normal .tabs button.active {
+    background: linear-gradient(180deg, #A8A878 0%, #8A8A59 100%);
+    box-shadow: 0 0 15px rgba(168, 168, 120, 0.3);
+}
+
+.type-poison .tabs button.active {
+    background: linear-gradient(180deg, #A040A0 0%, #682A68 100%);
+    box-shadow: 0 0 15px rgba(160, 64, 160, 0.3);
+}
+
+.type-electric .tabs button.active {
+    background: linear-gradient(180deg, #F8D030 0%, #A1862D 100%);
+    box-shadow: 0 0 15px rgba(248, 208, 48, 0.3);
+}
+
+.type-ground .tabs button.active {
+    background: linear-gradient(180deg, #E0C068 0%, #927C44 100%);
+    box-shadow: 0 0 15px rgba(224, 192, 104, 0.3);
+}
+
+.type-fairy .tabs button.active {
+    background: linear-gradient(180deg, #EE99AC 0%, #9B6470 100%);
+    box-shadow: 0 0 15px rgba(238, 153, 172, 0.3);
+}
+
+.type-fighting .tabs button.active {
+    background: linear-gradient(180deg, #C03028 0%, #7D1F1A 100%);
+    box-shadow: 0 0 15px rgba(192, 48, 40, 0.3);
+}
+
+.type-psychic .tabs button.active {
+    background: linear-gradient(180deg, #F85888 0%, #A13959 100%);
+    box-shadow: 0 0 15px rgba(248, 88, 136, 0.3);
+}
+
+.type-rock .tabs button.active {
+    background: linear-gradient(180deg, #B8A038 0%, #786824 100%);
+    box-shadow: 0 0 15px rgba(184, 160, 56, 0.3);
+}
+
+.type-ghost .tabs button.active {
+    background: linear-gradient(180deg, #705898 0%, #493963 100%);
+    box-shadow: 0 0 15px rgba(112, 88, 152, 0.3);
+}
+
+.type-ice .tabs button.active {
+    background: linear-gradient(180deg, #98D8D8 0%, #638D8D 100%);
+    box-shadow: 0 0 15px rgba(152, 216, 216, 0.3);
+}
+
+.type-dragon .tabs button.active {
+    background: linear-gradient(180deg, #7038F8 0%, #4924A1 100%);
+    box-shadow: 0 0 15px rgba(112, 56, 248, 0.3);
+}
+
+.type-dark .tabs button.active {
+    background: linear-gradient(180deg, #705848 0%, #493830 100%);
+    box-shadow: 0 0 15px rgba(112, 88, 72, 0.3);
+}
+
+.type-steel .tabs button.active {
+    background: linear-gradient(180deg, #B8B8D0 0%, #787887 100%);
+    box-shadow: 0 0 15px rgba(184, 184, 208, 0.3);
+}
+
+.type-flying .tabs button.active {
+    background: linear-gradient(180deg, #A890F0 0%, #6D5E9C 100%);
+    box-shadow: 0 0 15px rgba(168, 144, 240, 0.3);
+}
+
+
+

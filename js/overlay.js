@@ -6,6 +6,10 @@ function showPokemonDetails(pokemonData) {
     let pokemonShowcase = document.querySelector('.pokemon-showcase');
     let type = pokemonData.types[0].type.name;
 
+
+    overlayContent.className = 'overlayContent';
+    overlayContent.classList.add(`type-${type}`);
+
     pokemonShowcase.className = 'pokemon-showcase';
     pokemonShowcase.classList.add(`type-${type}-bg`);
 

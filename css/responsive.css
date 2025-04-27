@@ -23,10 +23,16 @@
 @media (max-width:600px) {
 
   .headerContainer {
-    justify-content: space-between; /* Logo und About bleiben korrekt */
-}
+    justify-content: space-between;
+    /* Logo und About bleiben korrekt */
+  }
+
   #overlayContent {
-    width: 260px;
+    width: 350px;
+  }
+
+  .tab-content-wrapper {
+    padding: 20px 70px;
   }
 
   .tabContent {
@@ -113,16 +119,29 @@
 @media (max-width:440px) {
 
   #overlayContent {
-    width: 150px;
+    width: 220px;
+  }
+
+  .tab-content-wrapper {
+    background: none;
+    padding: 0;
+  }
+
+  
+
+  .pokemon-header {
+    margin-left: -20px;
+  }
+
+  #pokemonName {
+    font-size: 1.5rem !important;
   }
 
   .tabs button {
     padding: 8px 14px;
   }
 
-  .infoContainer {
-    margin-left: -50px;
-  }
+  
 
   .infoLabel,
   .infoValue {
