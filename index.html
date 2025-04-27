@@ -9,6 +9,7 @@
     <link rel="icon" href="assets/icons/pokeball.png">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/pokemon.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/standard.css">
@@ -48,26 +49,40 @@
         <button id="loadMoreButton" onclick="loadMorePokemon()">Load More</button>
         <div id="loading" style="display: none;">Loading...</div>
     </div>
+
     <div id="overlay" onclick="handleOverlayClick()" style="display: none;">
-        <div id="overlayContent" onclick="event.stopPropagation()">
+    <div id="overlayContent" onclick="event.stopPropagation()">
+        <button class="close-button" onclick="closeOverlay()">×</button>
+        
+        <div class="pokemon-header">
             <button id="prevPokemon" class="arrow left" onclick="navigatePokemon('prev')">←</button>
-            <h2 id="pokemonName"></h2>
+            <div class="pokemon-title">
+                <span class="pokemon-number"></span>
+                <h2 id="pokemonName"></h2>
+            </div>
+            <button id="nextPokemon" class="arrow right" onclick="navigatePokemon('next')">→</button>
+        </div>
+
+        <div class="pokemon-showcase">
             <div id="pokemonImageContainer">
                 <img id="pokemonImage">
+                <div class="type-badges"></div>
             </div>
+        </div>
 
-            <div class="tabs" id="tabName">
-                <button onclick="showTab('info')">Information</button>
-                <button onclick="showTab('stats')">Stats</button>
-                <button onclick="showTab('evolution')">Evolution</button>
-            </div>
+        <div class="tabs" id="tabName">
+            <button onclick="showTab('info')" class="active">Information</button>
+            <button onclick="showTab('stats')">Stats</button>
+            <button onclick="showTab('evolution')">Evolution</button>
+        </div>
+
+        <div class="tab-content-wrapper">
             <div id="info" class="tabContent active"></div>
             <div id="stats" class="tabContent"></div>
             <div id="evolution" class="tabContent evolutionContent"></div>
-            <button id="nextPokemon" class="arrow right" onclick="navigatePokemon('next')">→</button>
-            <button onclick="closeOverlay()">Schließen</button>
         </div>
     </div>
+</div>
 
 
     <footer id="footer">

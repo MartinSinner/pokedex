@@ -1,0 +1,315 @@
+/*colors matching pokemon types*/
+.type-grass {
+    background-color: #78C850;
+}
+.type-grass:hover {
+    background: linear-gradient(180deg, #78C850 0%, #4A9C2A 100%) !important;
+    box-shadow: 0 0 20px rgba(120, 200, 80, 0.6) !important;
+}
+.type-grass:hover img {
+    filter: drop-shadow(0 0 20px #78C850) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-normal {
+    background-color: #A8A878;
+}
+.type-normal:hover {
+    background: linear-gradient(180deg, #A8A878 0%, #8A8A59 100%) !important;
+    box-shadow: 0 0 20px rgba(168, 168, 120, 0.6) !important;
+}
+.type-normal:hover img {
+    filter: drop-shadow(0 0 10px #A8A878) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-fighting {
+    background-color: #C03028;
+}
+.type-fighting:hover {
+    background: linear-gradient(180deg, #C03028 0%, #7D1F1A 100%) !important;
+    box-shadow: 0 0 20px rgba(192, 48, 40, 0.6) !important;
+}
+.type-fighting:hover img {
+    filter: drop-shadow(0 0 10px #C03028) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-flying {
+    background-color: #A890F0;
+}
+.type-flying:hover {
+    background: linear-gradient(180deg, #A890F0 0%, #6D5E9C 100%) !important;
+    box-shadow: 0 0 20px rgba(168, 144, 240, 0.6) !important;
+}
+.type-flying:hover img {
+    filter: drop-shadow(0 0 10px #A890F0) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-electric {
+    background-color: #F8D030;
+}
+.type-electric:hover {
+    background: linear-gradient(180deg, #F8D030 0%, #A1862D 100%) !important;
+    box-shadow: 0 0 20px rgba(248, 208, 48, 0.6) !important;
+}
+.type-electric:hover img {
+    filter: drop-shadow(0 0 10px #F8D030) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-ground {
+    background-color: #E0C068;
+}
+.type-ground:hover {
+    background: linear-gradient(180deg, #E0C068 0%, #927C44 100%) !important;
+    box-shadow: 0 0 20px rgba(224, 192, 104, 0.6) !important;
+}
+.type-ground:hover img {
+    filter: drop-shadow(0 0 10px #E0C068) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-psychic {
+    background-color: #F85888;
+}
+.type-psychic:hover {
+    background: linear-gradient(180deg, #F85888 0%, #A13959 100%) !important;
+    box-shadow: 0 0 20px rgba(248, 88, 136, 0.6) !important;
+}
+.type-psychic:hover img {
+    filter: drop-shadow(0 0 10px #F85888) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-ice {
+    background-color: #98D8D8;
+}
+.type-ice:hover {
+    background: linear-gradient(180deg, #98D8D8 0%, #638D8D 100%) !important;
+    box-shadow: 0 0 20px rgba(152, 216, 216, 0.6) !important;
+}
+.type-ice:hover img {
+    filter: drop-shadow(0 0 10px #98D8D8) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-dragon {
+    background-color: #7038F8;
+}
+.type-dragon:hover {
+    background: linear-gradient(180deg, #7038F8 0%, #4924A1 100%) !important;
+    box-shadow: 0 0 20px rgba(112, 56, 248, 0.6) !important;
+}
+.type-dragon:hover img {
+    filter: drop-shadow(0 0 10px #7038F8) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-ghost {
+    background-color: #705898;
+}
+.type-ghost:hover {
+    background: linear-gradient(180deg, #705898 0%, #493963 100%) !important;
+    box-shadow: 0 0 20px rgba(112, 88, 152, 0.6) !important;
+}
+.type-ghost:hover img {
+    filter: drop-shadow(0 0 10px #705898) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-dark {
+    background-color: #705848;
+}
+.type-dark:hover {
+    background: linear-gradient(180deg, #705848 0%, #493830 100%) !important;
+    box-shadow: 0 0 20px rgba(112, 88, 72, 0.6) !important;
+}
+.type-dark:hover img {
+    filter: drop-shadow(0 0 10px #705848) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-steel {
+    background-color: #B8B8D0;
+}
+.type-steel:hover {
+    background: linear-gradient(180deg, #B8B8D0 0%, #787887 100%) !important;
+    box-shadow: 0 0 20px rgba(184, 184, 208, 0.6) !important;
+}
+.type-steel:hover img {
+    filter: drop-shadow(0 0 10px #B8B8D0) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-fairy {
+    background-color: #EE99AC;
+}
+.type-fairy:hover {
+    background: linear-gradient(180deg, #EE99AC 0%, #9B6470 100%) !important;
+    box-shadow: 0 0 20px rgba(238, 153, 172, 0.6) !important;
+}
+.type-fairy:hover img {
+    filter: drop-shadow(0 0 10px #EE99AC) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-rock {
+    background-color: #B8A038;
+}
+.type-rock:hover {
+    background: linear-gradient(180deg, #B8A038 0%, #786824 100%) !important;
+    box-shadow: 0 0 20px rgba(184, 160, 56, 0.6) !important;
+}
+.type-rock:hover img {
+    filter: drop-shadow(0 0 10px #B8A038) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-poison {
+    background-color: #A040A0;
+}
+.type-poison:hover {
+    background: linear-gradient(180deg, #A040A0 0%, #682A68 100%) !important;
+    box-shadow: 0 0 20px rgba(160, 64, 160, 0.6) !important;
+}
+.type-poison:hover img {
+    filter: drop-shadow(0 0 10px #A040A0) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-fire {
+    background-color: #F08030;
+}
+.type-fire:hover {
+    background: linear-gradient(180deg, #F08030 0%, #C25016 100%) !important;
+    box-shadow: 0 0 20px rgba(240, 128, 48, 0.6) !important;
+}
+.type-fire:hover img {
+    filter: drop-shadow(0 0 10px #F08030) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-water {
+    background-color: #6890F0;
+}
+.type-water:hover {
+    background: linear-gradient(180deg, #6890F0 0%, #386CCC 100%) !important;
+    box-shadow: 0 0 20px rgba(104, 144, 240, 0.6) !important;
+}
+.type-water:hover img {
+    filter: drop-shadow(0 0 10px #6890F0) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.type-bug {
+    background-color: #A8B820;
+}
+.type-bug:hover {
+    background: linear-gradient(180deg, #A8B820 0%, #8A9A00 100%) !important;
+    box-shadow: 0 0 20px rgba(168, 184, 32, 0.6) !important;
+}
+.type-bug:hover img {
+    filter: drop-shadow(0 0 10px #A8B820) brightness(1.1);
+    transform: scale(1.1);
+}
+
+
+.pokemon-showcase {
+    position: relative;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: background 0.3s ease;
+}
+
+/* Type-specific background styles */
+.type-grass-bg {
+    background: radial-gradient(circle at center, rgba(120, 200, 80, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-fire-bg {
+    background: radial-gradient(circle at center, rgba(240, 128, 48, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-water-bg {
+    background: radial-gradient(circle at center, rgba(104, 144, 240, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-bug-bg {
+    background: radial-gradient(circle at center, rgba(168, 184, 32, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-normal-bg {
+    background: radial-gradient(circle at center, rgba(168, 168, 120, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-poison-bg {
+    background: radial-gradient(circle at center, rgba(160, 64, 160, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-electric-bg {
+    background: radial-gradient(circle at center, rgba(248, 208, 48, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-ground-bg {
+    background: radial-gradient(circle at center, rgba(224, 192, 104, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-fairy-bg {
+    background: radial-gradient(circle at center, rgba(238, 153, 172, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-fighting-bg {
+    background: radial-gradient(circle at center, rgba(192, 48, 40, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-psychic-bg {
+    background: radial-gradient(circle at center, rgba(248, 88, 136, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-rock-bg {
+    background: radial-gradient(circle at center, rgba(184, 160, 56, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-ghost-bg {
+    background: radial-gradient(circle at center, rgba(112, 88, 152, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-ice-bg {
+    background: radial-gradient(circle at center, rgba(152, 216, 216, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-dragon-bg {
+    background: radial-gradient(circle at center, rgba(112, 56, 248, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-dark-bg {
+    background: radial-gradient(circle at center, rgba(112, 88, 72, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-steel-bg {
+    background: radial-gradient(circle at center, rgba(184, 184, 208, 0.2) 0%, rgba(0,0,0,0) 70%);
+}
+
+.type-flying-bg {
+    background: radial-gradient(circle at center, rgba(168, 144, 240, 0.2) 0%, rgba(0,0,0,0) 70%);
+}

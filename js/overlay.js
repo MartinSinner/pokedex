@@ -1,7 +1,13 @@
 function showPokemonDetails(pokemonData) {
     let overlay = document.getElementById('overlay');
+    let overlayContent = document.getElementById('overlayContent');
     let pokemonName = document.getElementById('pokemonName');
     let pokemonImage = document.getElementById('pokemonImage');
+    let pokemonShowcase = document.querySelector('.pokemon-showcase');
+    let type = pokemonData.types[0].type.name;
+
+    pokemonShowcase.className = 'pokemon-showcase';
+    pokemonShowcase.classList.add(`type-${type}-bg`);
 
     overlay.style.display = "flex";
     pokemonName.textContent = pokemonData.name.toUpperCase();       //big letters

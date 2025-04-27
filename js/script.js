@@ -34,6 +34,16 @@ function getTypeColor(type) {
         poison: "#A040A0",
         electric: "#F8D030",
         ground: "#E0C068",
+        fighting: "#C03028",
+        psychic: "#F85888",
+        rock: "#B8A038",
+        ghost: "#705898",
+        ice: "#98D8D8",
+        dragon: "#7038F8",
+        steel: "#B8B8D0",
+        flying: "#A890F0",
+        dark: "#705848",
+        fairy: "#EE99AC"
 
     };
     return colors[type] || "#A8A878";

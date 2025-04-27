@@ -1,7 +1,8 @@
 function showPoki(pokemonData) {
     let typeIcons = generateTypeIcon(pokemonData.types)
+    let type = pokemonData.types[0].type.name;
     return `
-        <div class="pokemon" style="--type-color: ${getTypeColor(pokemonData.types[0].type.name)}">
+        <div class="pokemon type-${type}">            
             <h3> #${pokemonData.id} ${pokemonData.name.toUpperCase()}</h3>                       
             <img src="${pokemonData.sprites.other["official-artwork"].front_default}">
             <div class="type-icons">

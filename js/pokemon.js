@@ -14,7 +14,7 @@ async function showPokemonList(offset, limit) {
         pokemonDiv.classList.add('pokemon');
         pokemonDiv.innerHTML = showPoki(pokemonData);
         pokemonDiv.onclick = () => showPokemonDetails(pokemonData);
-        pokemonContainer.appendChild(pokemonDiv);           // pokemonDiv Container add to container above 
+        pokemonContainer.appendChild(pokemonDiv);         
     }
 }
 
